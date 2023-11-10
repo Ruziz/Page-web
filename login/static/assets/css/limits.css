@@ -1,0 +1,81 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    font-family: Arial, sans-serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    background-color: #445972;
+    color:rgb(119, 193, 243);
+    padding: 20px;
+    margin: 0;
+}
+.result {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color:rgb(31, 32, 32);
+    padding: 20px;
+    margin: 0;
+}
+
+/* Estilo para el enlace "Regresar" */
+a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background-color: #e76d73;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el formulario */
+form {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #4e769b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el botón "Calcular" */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el resultado */
+h2 {
+    box-shadow: rgba(3, 70, 255, 0.2) 0px 2px 8px 0px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #ec14148f;
+}
+
+p {
+    font-size: 18px;
+}

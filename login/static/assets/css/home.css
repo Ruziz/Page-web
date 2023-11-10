@@ -1,0 +1,124 @@
+.cerrar {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(46, 119, 113);
+    padding: 0px 0px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.container-form {
+    display:flex;
+    border-radius: 10px;
+    box-shadow: 0 10px 12px rgba(245, 18, 226, 0.1);
+    height: 500px;
+    max-width: 90%;
+    transition: all is ease;
+    margin: auto;
+
+}
+
+.information {
+    width: 90%;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    background-color: hsla(221, 87%, 21%, 0.992);
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    
+}
+ .info-childs {
+    width: 90%;
+    padding: 0 30px;
+ }
+ .i…
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/img.jpg);
+    background-size: center;
+
+}
+
+ .info-childs {
+    width: 90%;
+    padding: 0 30px;
+ }
+ .info-childs h2 {
+    font-size: 2.5rem;
+    color: rgb(11, 226, 241);
+
+ }
+ .info-childs input:hover {
+    background-color: #9191bd;
+    border: none;
+    color: rgb(251, 240, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+ }
+ .form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    background-color: #f8f8f8 ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+ .form-information-childs {
+    padding: 0 30px;
+ }
+ .form-information-childs h2{
+    color: #333;
+    font-size: 2rem;
+ }
+ .form-information-childs p{
+   color: #555; 
+ }
+.icons {
+    margin: 15px 0;
+}
+.icons i {
+    border-radius: 80%;
+    padding: 10px;
+    cursor: pointer;
+    margin: auto;
+    color: #3f3fd6;
+    border: solid thin #4848ce;
+    transition: bacground-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    
+}
+.icons i:hover{
+    background-color: #aa92bd;
+    color: #7e0bdb;
+
+}
+.form {
+    margin: 30px 0 0 0 ;
+}
+.form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    
+}

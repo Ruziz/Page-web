@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Register</title>
+</head>
+<style>
+    ul>li {
+        font-size: 11px;
+    }
+
+    ul {
+        padding: 10px;
+    }
+
+    .shadow-image {
+        -webkit-box-shadow: 30px 50px 5px -1px rgba(18, 208, 255, 0.66);
+        -moz-box-shadow: 30px 50px 5px -1px rgba(18, 208, 255, 0.66);
+        box-shadow: 30px 50px 5px -1px rgba(18, 208, 255, 0.66);
+    }
+</style>
+
+<body style="background-color: #D0D1D6; color: white;">
+    <div class="container"
+        style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; margin-top: 8%; background-color: #0A0A0A;">
+        <div class="row">
+            <div class="col-6">
+                <img src="https://img.freepik.com/fotos-premium/concepto-tecnologia-abstracta-fondo-3d-renderizado-imagen-tonificada-doble-exposicion_890887-9627.jpg?size=626&ext=jpg&ga=GA1.2.1469135726.1694665665&semt=sph"
+                    alt="aaa" width="100%" height="500px">
+            </div>
+            <div class="col-6">
+                <div class="container" style="width: 100%; height: 100%; padding: 35px;">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <h3 style="margin-top: 5%;">Registro</h3>
+                        <div class="container" style="padding: 5px;">
+                            <div class="col-12">
+                                <div class="col-12">
+                                    <label for="{{ form.username.id_for_label }}" class="custom-label">Usuario:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" name="username" id="user" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-12">
+                                    <label for="{{ form.password1.id_for_label }}"
+                                        class="custom-label">Contraseña:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="password" name="password1" id="pass" style="width: 100%;">
+                                </div>
+                                <ul>
+                                    <li>Su contraseña no puede asemejarse tanto a su otra información personal.</li>
+                                    <li>Su contraseña debe contener al menos 8 caracteres.</li>
+                                    <li>Su contraseña no puede ser una clave utilizada comúnmente.</li>
+                                    <li>Su contraseña no puede ser completamente numérica.</li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="col-12">
+                                    <label for="{{ form.password2.id_for_label }}" class="custom-label">Confirmar
+                                        Contraseña:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="password" name="password2" id="pass" style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-3"
+                                        style="margin-top: 10px; text-align: center; align-items: center;">
+                                        <input type="submit" value="Registrar" style="width: 100%"
+                                            class="btn btn-primary">
+                                    </div>
+                                    <div class="col-3"
+                                        style="margin-top: 10px; text-align: center; align-items: center;">
+                                        <a href="{% url 'login' %}" class="btn btn-warning"
+                                            style="width: 100%">Login</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
